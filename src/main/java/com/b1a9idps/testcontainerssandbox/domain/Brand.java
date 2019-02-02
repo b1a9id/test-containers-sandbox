@@ -6,7 +6,7 @@ import java.io.Serializable;
 @Entity
 public class Brand implements Serializable {
 	public enum Gender {
-		MAN, WOMAN
+		MAN, WOMAN, UNISEX
 	}
 
 	@Id
