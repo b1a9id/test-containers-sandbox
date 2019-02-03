@@ -20,10 +20,9 @@ class BrandRepositoryTest {
 
 	@Test
 	@Sql(scripts = "classpath:/db/migration/brand/initial_data.sql")
-	void test() {
-		Assertions.assertThat(brandRepository.findAll())
+	void findByGender() {
+		Assertions.assertThat(brandRepository.findAllByGender(Brand.Gender.MAN))
 				.extracting(Brand::getName, Brand::getDesigner, Brand::getGender)
 				.containsExactly(Tuple.tuple("ETHOSENS", "橋本 唯", Brand.Gender.MAN));
 	}
-
 }

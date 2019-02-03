@@ -6,4 +6,6 @@ create table brand (
   primary key (id)
 );
 
-insert into brand (name, designer, gender) values ('ETHOSENS', '橋本 唯', 'MAN')
+insert into brand (name, designer, gender) values ('ETHOSENS', '橋本 唯', 'MAN');
+insert into brand (name, designer, gender) values ('STOF', '谷田 浩', 'UNISEX');
+insert into brand (name, designer, gender) values ('bedsidedrama', '谷田 浩', 'UNISEX');
